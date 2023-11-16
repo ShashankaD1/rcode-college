@@ -1,0 +1,7 @@
+midx = seq(25, 85, 10)
+frequency = c(10, 24, 18, 12, 8, 5, 3)
+x = rep(midx, frequency)
+brk = seq(20, 90, 10)
+hist(x, breaks = brk, main = "histogram", xlab = "pocket money", ylab = "no. of students")
+temp = hist(x, xlab = "pocket money", ylab = "no. of students", main = "histogram ", col = gray(0.8))
+lines(c(min(temp$breaks), temp$mids, max(temp$breaks)), mid = 2, c(0, temp$counts, 0), type = "l")

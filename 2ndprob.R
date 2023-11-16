@@ -1,0 +1,5 @@
+midx = c(2.5,9.5,16,25,30,40,50,60,82.5)
+frequency = c(18,35,16,25,34,41,36,22,32)
+brk= c(0.5,14,18,25,35,45,55,65,100)
+y = rep(midx,frequency)
+hist(y,breaks=brk,xlab="Age-Group",ylab="Age wise projected population",col="gray70")
